@@ -1,0 +1,26 @@
+.renderTodo {
+  width: 500px;
+  color: rgb(22, 23, 23);
+  font-size: 20px;
+  margin: 0 auto;
+}
+.renderTodoName {
+  font-weight: bold;
+  padding: 20px;
+}
+.renderTodoLine {
+  border: 1px solid #f4f4f4;
+}
+.renderTodoDel {
+  float: right;
+  padding: 12px 20px;
+  border: none;
+  background-color: aqua;
+  color: white;
+  margin-top: -5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+}
