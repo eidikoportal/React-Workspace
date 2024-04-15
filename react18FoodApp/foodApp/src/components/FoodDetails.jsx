@@ -45,7 +45,7 @@ export default function FoodDetails({ foodId }) {
           </span>
         </div>
         <h2>Ingredients</h2>
-        <ItemList food={food} isLoading={isLoading} />
+        <ItemList food={food} key={food.id} isLoading={isLoading} />
         <h2>Instructions</h2>
         <div className={styles.recipeInstructions}>
           <ol>
@@ -53,7 +53,7 @@ export default function FoodDetails({ foodId }) {
               <p>Loading...</p>
             ) : (
               food.analyzedInstructions[0].steps.map((step) => (
-                <li>{step.step}</li>
+                <li key={step.number}>{step.step}</li>
               ))
             )}
           </ol>
